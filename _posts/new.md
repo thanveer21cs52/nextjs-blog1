@@ -1,68 +1,19 @@
 ---
-title: new
-excerpt: new
-coverImage: /assets/myimg.jpg
-date: 2025-09-09T18:05:00.000Z
+title: "Preview Mode for Static Generation"
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
+coverImage: "/assets/blog/preview/cover.jpg"
+date: "2020-03-16T05:35:07.322Z"
 author:
-  name: auth
+  name: Joe Haddad
+  picture: "/assets/blog/authors/joe.jpeg"
+ogImage:
+  url: "/assets/blog/preview/cover.jpg"
 ---
-If you use this endpoint and the "[Delete a file](https://docs.github.com/rest/repos/contents/#delete-a-file)" endpoint in parallel, the concurrent requests will conflict and you will receive errors. You must use these endpoints serially instead.
 
-OAuth app tokens and personal access tokens (classic) need the `repo` scope to use this endpoint. The `workflow` scope is also required in order to modify files in the `.github/workflows` directory.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
 
-### [**Fine-grained access tokens for "Create or update file contents"**](https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents--fine-grained-access-tokens)
+Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
 
-This endpoint works with the following fine-grained token types:
+## Lorem Ipsum
 
-*   [GitHub App user access tokens](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-a-user-access-token-for-a-github-app)
-    
-*   [GitHub App installation access tokens](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app)
-    
-*   [Fine-grained personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token)
-    
-
-The fine-grained token must have at least one of the following permission sets:
-
-*   "Contents" repository permissions (write)
-    
-*   "Contents" repository permissions (write) and "Workflows" repository permissions (write)
-    
-
-### [**Parameters for "Create or update file contents"**](https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents--parameters)
-
-|     |
-| --- |
-| **Headers** |
-| **Name, Type, Description** |
-| `accept` string<br><br>Setting to `application/vnd.github+json` is recommended. |
-
-|     |
-| --- |
-| **Path parameters** |
-| **Name, Type, Description** |
-| `owner` string Required<br><br>The account owner of the repository. The name is not case sensitive. |
-| `repo` string Required<br><br>The name of the repository without the `.git` extension. The name is not case sensitive. |
-| `path` string Required<br><br>path parameter |
-
-|     |
-| --- |
-| **Body parameters** |
-| **Name, Type, Description** |
-| `message` string Required<br><br>The commit message. |
-| `content` string Required<br><br>The new file content, using Base64 encoding. |
-| `sha` string<br><br>**Required if you are updating a file**. The blob SHA of the file being replaced. |
-| `branch` string<br><br>The branch name. Default: the repository’s default branch. |
-| `committer` object<br><br>The person that committed the file. Default: the authenticated user. |
-| Properties of `committer` |
-| `author` object<br><br>The author of the file. Default: The `committer` or the authenticated user if you omit `committer`. |
-| Properties of `author` |
-
-### [**HTTP response status codes for "Create or update file contents"**](https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents--status-codes)
-
-| **Status code** | **Description** |
-| --- | --- |
-| `200` | OK  |
-| `201` | Created |
-| `404` | Resource not found |
-| `409` | Conflict |
-| `422` | Validation failed, or the endpoint has been spammed. |
+Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
